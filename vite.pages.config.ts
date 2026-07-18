@@ -6,4 +6,9 @@ import tsConfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   base: "/syrian-trading-corporation/",
   plugins: [react(), tailwindcss(), tsConfigPaths()],
+  build: {
+    rollupOptions: {
+      input: "pages-index.html",
+    },
+  },
 });
