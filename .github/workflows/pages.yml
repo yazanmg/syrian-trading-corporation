@@ -34,6 +34,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          mv dist/pages-index.html dist/index.html
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
