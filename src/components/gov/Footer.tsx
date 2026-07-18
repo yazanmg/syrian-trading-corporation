@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { publicAsset } from "@/lib/assets";
 import { Icon } from "./Icon";
 
 export function Footer() {
@@ -9,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <img
-                src="/emblem-syria.webp"
+                src={publicAsset("emblem-syria.webp")}
                 alt="شعار المؤسسة"
                 className="h-12 w-12 object-contain"
               />

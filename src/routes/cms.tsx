@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Icon } from "@/components/gov/Icon";
+import { publicAsset } from "@/lib/assets";
 
 export const Route = createFileRoute("/cms")({
   head: () => ({
@@ -28,7 +29,7 @@ function CMSPage() {
         {/* Sidebar */}
         <aside className="hidden w-64 shrink-0 flex-col border-l border-border bg-primary-deep text-primary-foreground lg:flex">
           <div className="flex h-16 items-center gap-3 border-b border-white/10 px-5">
-            <img src="/emblem-syria.webp" alt="" className="h-8 w-8" />
+            <img src={publicAsset("emblem-syria.webp")} alt="" className="h-8 w-8" />
             <div className="leading-tight">
               <div className="text-[10.5px] uppercase tracking-wide text-white/60">CMS</div>
               <div className="text-[13.5px] font-bold !text-white">لوحة الإدارة</div>

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/gov/Header";
 import { Footer } from "@/components/gov/Footer";
 import { Icon } from "@/components/gov/Icon";
+import { publicAsset } from "@/lib/assets";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -150,7 +151,7 @@ function Hero() {
     <section className="relative overflow-hidden bg-primary-deep text-primary-foreground">
       {/* subtle emblem watermark */}
       <img
-        src="/emblem-syria.webp"
+        src={publicAsset("emblem-syria.webp")}
         alt=""
         aria-hidden
         className="pointer-events-none absolute -left-24 top-1/2 h-[520px] w-[520px] -translate-y-1/2 object-contain opacity-[0.05]"
@@ -645,7 +646,7 @@ function LatestNews() {
               }
             >
               <img
-                src="/emblem-syria.webp"
+                src={publicAsset("emblem-syria.webp")}
                 alt=""
                 aria-hidden
                 className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 object-contain opacity-[0.07]"
@@ -692,7 +693,7 @@ function MobileApp() {
     <section className="mx-auto max-w-7xl px-4 sm:px-6">
       <div className="card-gov relative overflow-hidden bg-primary-deep p-10 text-primary-foreground lg:p-14">
         <img
-          src="/emblem-syria.webp"
+          src={publicAsset("emblem-syria.webp")}
           alt=""
           aria-hidden
           className="pointer-events-none absolute -left-16 -top-16 h-96 w-96 object-contain opacity-[0.05]"
@@ -736,7 +737,7 @@ function MobileApp() {
           <div className="relative hidden lg:block">
             <div className="mx-auto grid h-72 w-40 place-items-center rounded-[32px] border border-white/20 bg-white/5">
               <div className="grid h-64 w-32 place-items-center rounded-2xl bg-white/5">
-                <img src="/emblem-syria.webp" alt="" className="h-16 w-16 opacity-90" />
+                <img src={publicAsset("emblem-syria.webp")} alt="" className="h-16 w-16 opacity-90" />
               </div>
             </div>
           </div>

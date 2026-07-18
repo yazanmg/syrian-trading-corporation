@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { publicAsset } from "@/lib/assets";
 import { Icon } from "./Icon";
 
 export function PageHead({
@@ -15,7 +16,7 @@ export function PageHead({
   return (
     <section className="relative overflow-hidden border-b border-border bg-primary-deep text-primary-foreground">
       <img
-        src="/emblem-syria.webp"
+        src={publicAsset("emblem-syria.webp")}
         alt=""
         aria-hidden
         className="pointer-events-none absolute -left-24 top-1/2 h-[360px] w-[360px] -translate-y-1/2 object-contain opacity-[0.05]"

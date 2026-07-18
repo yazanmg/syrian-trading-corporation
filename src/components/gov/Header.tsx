@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { publicAsset } from "@/lib/assets";
 import { Icon } from "./Icon";
 
 const NAV = [
@@ -42,7 +43,7 @@ export function Header() {
         <div className="mx-auto flex h-20 max-w-7xl items-center gap-6 px-4 sm:px-6">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/emblem-syria.webp"
+              src={publicAsset("emblem-syria.webp")}
               alt="شعار الجمهورية العربية السورية"
               className="h-11 w-11 object-contain"
             />

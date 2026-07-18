@@ -3,6 +3,7 @@ import { Header } from "@/components/gov/Header";
 import { Footer } from "@/components/gov/Footer";
 import { Icon } from "@/components/gov/Icon";
 import { PageHead } from "@/components/gov/PageHead";
+import { publicAsset } from "@/lib/assets";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
@@ -70,7 +71,7 @@ function NewsPage() {
         <article className="card-gov card-gov-hover mb-8 grid overflow-hidden lg:grid-cols-2">
           <div className="relative aspect-[16/10] overflow-hidden bg-primary-deep p-8 text-primary-foreground">
             <img
-              src="/emblem-syria.webp"
+              src={publicAsset("emblem-syria.webp")}
               alt=""
               aria-hidden
               className="pointer-events-none absolute -right-10 -top-10 h-72 w-72 object-contain opacity-[0.08]"
